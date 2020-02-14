@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Tomorrow&display=swap');
 
 /* GLOBAL */
 * {
@@ -11,28 +12,48 @@
 
 .container {
     flex-flow: row nowrap;
+    padding: 0;
+    width: 100%;   
+    font-family: 'Open Sans' sans-serif; 
+    background-color: #888888;
 }
 
 /* SIDEBAR */
 .sidebar {
-    margin-left: 25px;
+    padding: 0 10px;
     flex-flow: column wrap;
     width: 30%;
-    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 44, 118, .6);
 }
 
-.sidebar_links {
-    text-align: center;
-    align-items: center;
+.link {
+    background-color: rgba(196, 18, 47, .5);
+    border-radius: 7px;
+}
+
+.link a {
+    padding: 6px;
+    border: 1px solid black;
+    border-radius: 12px;
+    background-color: #002C76;
+    color: #C4122F;
+}
+
+.sidebar_links h3,
+.sidebar_links h4,
+.myStory h1 {
+    font-family: 'Tomorrow', sans-serif;
 }
 
 /* MYSTORY */
 .myStory {
-    margin: 0 15px;
+    padding: 0 12px;
     flex-flow: column wrap;
-    width: 60%;
+    width: 70%;
     align-content: center;
     justify-content: space-evenly;
+    background-color: rgba(196, 18, 47, .5);
 }
 
 .profile_pic {
@@ -43,7 +64,7 @@
 /* FOOTER */
 .footer{
     height: 60px;
-    background-image: linear-gradient(#002C76, #C4122F);
+    background-image: linear-gradient(to right, #002c76, #C4122F);
     flex-flow: row nowrap;
     justify-content: space-around;
     align-items: center;
@@ -58,9 +79,11 @@
 
     .sidebar {
         width: 100%;
+        margin: 0;
     }
 
     .myStory {
         width: 100%;
+        margin: 0;
     }
 }
