@@ -10,80 +10,21 @@
     display: flex;
 }
 
-.container {
-    flex-flow: row nowrap;
-    padding: 0;
-    width: 100%;   
-    font-family: 'Open Sans' sans-serif; 
-    background-color: #888888;
+/* NAVBAR */
+.navbar {
+    height: 80px;
 }
 
-/* SIDEBAR */
-.sidebar {
-    padding: 0 10px;
-    flex-flow: column wrap;
-    width: 30%;
-    align-items: center;
-    background-color: rgba(0, 44, 118, .6);
+.logo {
+    height: 75px;
+    padding-bottom: 22px;
 }
+/* MY STORY */
 
-.link {
-    background-color: rgba(196, 18, 47, .5);
-    border-radius: 7px;
-}
+/* SKILLS */
 
-.link a {
-    padding: 6px;
-    border: 1px solid black;
-    border-radius: 12px;
-    background-color: #002C76;
-    color: #C4122F;
-}
+/* WORK */
 
-.sidebar_links h3,
-.sidebar_links h4,
-.myStory h1 {
-    font-family: 'Tomorrow', sans-serif;
-}
-
-/* MYSTORY */
-.myStory {
-    padding: 0 12px;
-    flex-flow: column wrap;
-    width: 70%;
-    align-content: center;
-    justify-content: space-evenly;
-    background-color: rgba(196, 18, 47, .5);
-}
-
-.profile_pic {
-    width: 95%;
-    margin: 5px;
-}
+/* CONTACT */
 
 /* FOOTER */
-.footer{
-    height: 60px;
-    background-image: linear-gradient(to right, #002c76, #C4122F);
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    align-items: center;
-    color: #f8f8f8;
-}
-
-/* MEDIA QUERIES */
-@media only screen and (max-width: 768px) {
-    .container {
-        flex-flow: column wrap;
-    }
-
-    .sidebar {
-        width: 100%;
-        margin: 0;
-    }
-
-    .myStory {
-        width: 100%;
-        margin: 0;
-    }
-}
