@@ -12,6 +12,7 @@
 
 body {
     background-color: #000;
+    color: #0a8439;
 }
 
 /* NAVBAR */
@@ -46,10 +47,10 @@ body {
 
 /* HERO */
 .hero {
-    margin-top: 80px;
     background: url("../img/mist-hero.jpg") center center no-repeat;
     background-size: cover;
-    height: 700px;
+    background-attachment: fixed;
+    height: 800px;
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
@@ -63,11 +64,82 @@ body {
     font-size: 4em;
 }
 /* MY STORY */
+.my-story{
+    flex-flow: row wrap;
+    background: linear-gradient(to bottom right, rgba(196,17,48,.50),rgba(0,74,141,.5));
+    justify-content: space-between;
+}
+
+.my-story img {
+    width: 25vw;
+}
+
+.story-content {
+    width: 65vw;
+    align-self: center;
+}
+
+.story-content {
+    font-family: 'Tomorrow', sans-serif;
+    margin-bottom: 15px;
+}
+
+.story-text {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.story-text p {
+    margin: 0 5px;
+}
 
 /* SKILLS */
+#skills {
+    background: url("../img/circuitry.jpg") center center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 400px;
+
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;   
+}
+
+#skills {
+    font-family: 'Tomorrow', sans-serif;
+    text-shadow: 1px 1px #000;
+}
+
+#skills h2 {
+    background-color: rgba(0,0,0,.6);
+    padding: 0 10vw;
+}
+
+.skill-lists {
+    background-color: rgba(0,0,0,.6);
+    padding: 10px 0;
+    flex-flow: row wrap;
+    font-size: 2rem;
+    justify-content: space-around;
+    width: 100vw;
+}
 
 /* WORK */
 
 /* CONTACT */
 
 /* FOOTER */
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 800px){
+    .my-story {
+        justify-content: center;
+    }
+
+    .my-story img {
+        width: 85vw;
+    }
+    .story-content {
+        width: 100vw;
+    }
+}
