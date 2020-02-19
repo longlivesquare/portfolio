@@ -10,14 +10,57 @@
     display: flex;
 }
 
+body {
+    background-color: #000;
+}
+
 /* NAVBAR */
 .navbar {
     height: 80px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(to bottom right, rgba(10, 132, 57, 0.4), rgba(0,0,0,.4));
 }
 
 .logo {
     height: 75px;
     padding-bottom: 22px;
+}
+
+.nav li {
+    color: #0a8439;
+}
+
+.navbar ul li {
+    background-color: #000;
+    border-radius: 7px;
+    color: #0a8439;
+}
+
+.navbar ul li:hover {
+    background-color: #0a8439;
+    color: #000;
+}
+
+/* HERO */
+.hero {
+    margin-top: 80px;
+    background: url("../img/mist-hero.jpg") center center no-repeat;
+    background-size: cover;
+    height: 700px;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    color: #0a8439;
+    text-shadow: 1px 1px #000;
+}
+
+.hero h1 {
+    font-weight: 700;
+    font-family: 'Tomorrow', sans-serif;
+    font-size: 4em;
 }
 /* MY STORY */
 
