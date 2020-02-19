@@ -9,74 +9,161 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="container flex">
-        <!-- SIDEBAR -->
-        <div class="sidebar flex">
-            <img src="img/profile.jpg" alt="Steven in graduation robe" class="profile_pic img-responsive img-rounded">
-            
-            <div class="sidebar_links">
-                <h3 class="text-center">
-                    Links
-                </h3>
-                <h4>Github</h4>
-                <div class="link">
-                    <a href="https://github.com/longlivesquare">Github</a>
-                    <p>
-                        My github account.
-                    </p>
-                </div>
-                <h4>Geekwise</h4>
-                <div class="link">
-                    <a href="https://longlivesquare.github.io/mfw-restaurante/" target="_blank">Restaurante</a>
-                    <p>
-                        In this project I created a single page with in page navigation from a top located navbar. I used bootstrap for mobile responsiveness.
-                    </p>
-                </div>
-                <div class="link">
-                    <a href="https://longlivesquare.github.io/mfw-pet-store/" target="_blank">Pet Store</a>
-                    <p>
-                        In this project I created a mockup of a pet store website to learn about bootstrap. I used bootstraps for the layout of the elements on the page.
-                    </p>
-                </div>
+    <!-- NAVBAR -->
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" data-toggle="collapse" data-target="#myNav" class="navbar-toggle collapsed">
+					<span class="sr-only">Toggle Navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button><a href="" class="navbar-brand"><img src="img/meeple-logo.png" alt="Restaurante logo" class="logo img-responsive"></a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNav">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active">
+						<a href="#home">Home</a>
+						<span class="sr-only">(current)</span>
+					</li>
+					<li><a href="#myStory">My Story</a></li>
+					<li><a href="#skills">Skills</a>
+					</li>
+					<li><a href="#work">Portfolio</a>
+					</li>
+					<li><a href="#contact">Contact Me</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- END NAVBAR-->
+	
+	<!-- HERO -->
+	<div class="hero flex" id="home">
+		<h1>Steven Duran</h1>
+		<h3>Programmer for Hire</h3>
+	</div>
+	<!-- END HERO -->
 
-                <h4>Fresno State</h4>
-                <div class="link">
-                    <a href="https://longlivesquare.github.io/Gomoko/" target="_blank">Gomoko</a>
-                    <p>
-                        In this project I implemented the game of Gomoko. It is a game that is essentially the board of Go and the goals of Connect 4. Warning: It is ugly as sin.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <!-- END SIDEBAR -->
-        <!-- MYSTORY -->
-        <div class="myStory flex">
-            <h1>My Story</h1>
-            <p>
-                I have been interested in technology from a young age. My father worked in tech services for Fresno Unified School District. I remember playing games on Proodigy. I wrote a "How To" on changing a hard drive for an assignment in first grade.
-            </p>
-            <p>
-                I began my programming journey in elementary school when we did Logo programming in computer class. As a freshmen in high school I learned BASIC. I knew that I wanted to be a programmer.
-            </p>
-            <p>
-                Unfortunately, knowing what you want and doing what you want aren't always the same thing. Due to bad study habits I lost focus getting to college. After too many years and too many colleges, I finally got my B.S. in Computer Science from Fresno State.
-            </p>
-            <p>
-                After all that time spent in school, I was a bit burnt out on computers. This combined with my grandma passing away shortly after my graduation, I needed a break. Here I am now, taking some classes at Geekwise getting my confidence back. 
-            </p>
-        </div>
-        <!-- END MY STORY -->
-    </div>
+	<!-- MY STORY -->
+	<div class="my-story flex" id="myStory">
+		<img src="img/profile.jpg" alt="Steven Duran wearing graduation cap and gown" class="img-responsive img-rounded">
+		<div class="story-content">
+			<h2>My Story</h2>
+			<div class="story-text flex">
+				<p>
+					I began my programmming journey at a young age. My father worked in Tech Services for Fresno Unified School District so we had a computer in the house. I remember playing games on Prodigy and I wrote a "How To" on changing a hard drive for writing assignment in second grade. Eventually I got my dad's old computer where I got to experience DOS.
+				</p>
+				<p>
+					I had my first experience with programming in elementary school with the Logo programming language. In high school I took a BASIC programming class. Yes, that BASIC. I knew that I wanted to be a programmer. I then went and got an A.S. in Computer Information Technology from Fresno City and a B.S. in Computer Science from California State University, Fresno.
+				</p>
+			</div>
+		</div>
+	</div>
+	<!-- END MY STORY -->
+
+	<!-- SKILL -->
+	<div id="skills" class="flex">
+		<h2>Skills</h2>
+		<div class="skill-lists flex">
+			<ul>
+				<li>C++</li>
+				<li>Java</li>
+				<li>HTML</li>
+				<li>CSS</li>
+				<li>Javascript</li>
+			</ul>
+			<ul>
+				<li>Go</li>
+				<li>PHP</li>
+				<li>Rust</li>
+				<li>Linux</li>
+			</ul>
+		</div>
+	</div>
+	<!-- END SKILLS -->
+
+	<!-- WORK -->
+	<div id="work" class="carousel slide" data-ride="carousel">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+		  <li data-target="#work" data-slide-to="0" class="active"></li>
+		  <li data-target="#work" data-slide-to="1"></li>
+		  <li data-target="#work" data-slide-to="2"></li>
+		  <li data-target="#work" data-slide-to="3"></li>
+		</ol>
+	  
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner" role="listbox">
+		  <div class="item active" id="carousel_img1">
+			<div class="carousel-caption">
+				<h3>Pet Shop</h3>
+				<p>A mockup of a pet shop using bootstrap for layout and mobile friendly display.</p>
+				<a href="https://longlivesquare.github.io/mfw-pet-store/" target="_blank">View Site</a>
+			</div>
+		  </div>
+		  <div class="item" id="carousel_img2">
+			<div class="carousel-caption">
+				<h3>Restaurante</h3>
+				<p>A single page layout made using bootstrap.</p>
+				<a href="https://longlivesquare.github.io/mfw-restaurante/" target="_blank">View Site</a>
+			</div>
+		  </div>
+		  <div class="item" id="carousel_img3">
+			<div class="carousel-caption">
+				<h3>Space Force</h3>
+				<p>Multi-page site made using flexbox for layout.</p>
+				<a href="https://longlivesquare.github.io/mfw-final/" target="_blank">View Site</a>
+			</div>
+		  </div>
+		  <div class="item" id="carousel_img4">
+			<div class="carousel-caption">
+				<h3>Yosemite</h3>
+				<p>Multi-page site made using CSS Grid for layout</p>
+				<a href="https://longlivesquare.github.io/webbeg-yosemite/" target="_blank">View Site</a>
+			</div>
+		  </div>
+		</div>
+	  
+		<!-- Controls -->
+		<a class="left carousel-control" href="#work" role="button" data-slide="prev">
+		  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		  <span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#work" role="button" data-slide="next">
+		  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		  <span class="sr-only">Next</span>
+		</a>
+	  </div>
+	<!-- END WORK -->
+	<!-- CONTACT -->
+	<div id="contact" class="flex">
+		<h2>Contact me for a quote!</h2>
+		<form action="" class="flex">
+			<div class="cont-left">
+				<div class="form-group"><label for="contName">Name</label><br><input type="text" id="contName"></div>
+				<div class="form-group"><label for="contEmail">E-Mail</label><br><input type="email" id="contEmail"></div>
+				<div class="form-group"><label for="contTopic">Topic</label><br><input type="text" id="contTopic"></div>
+			</div>
+			<div class="cont-right"><textarea name="" id="message" cols="30" rows="10"></textarea><br><button class="btn btn-default" type="submit">Send!</button></div>
+		</form>
+	</div>
+	<!-- END CONTACT -->
+    <!-- FOOTER -->
     <footer class="footer flex">
         <div class="social">
-            <i class="fab fa-facebook-square"></i>
-            <i class="fab fa-reddit-square"></i>
-            <i class="fab fa-linkedin"></i>
+			<a href="https://www.facebook.com/steven.duran" target="_blank"><i class="fab fa-facebook-square"></i><span class="hidden-xs">Facebook</span></a>
+			<a href="https://www.linkedin.com/in/steven-duran-b9548525/" target="_blank"><i class="fab fa-linkedin"></i><span class="hidden-xs">LinkedIn</span></a>
+			<a href="https://github.com/longlivesquare"><i class="fab fa-github-square"></i><span class="hidden-xs">Github</span></a>
+            
+            
         </div>
         <div class="copy">
             <p>&copy; Steven Duran. All rights reserved 2020.</p>
         </div>
     </footer>
+    <!-- END FOOTER -->
     <!-- javascript	 -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
